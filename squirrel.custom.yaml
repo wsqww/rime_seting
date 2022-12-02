@@ -5,8 +5,8 @@ patch:
 
   # 默认中、英、inline、no_inline 等等设定，参考 https://github.com/rime/squirrel/blob/master/data/squirrel.yaml
   app_options:
-    com.apple.Spotlight:
-      ascii_mode: true    # 开启默认英文
+    # com.apple.Spotlight:
+    #   ascii_mode: true    # 开启默认英文
     # com.microsoft.VSCode:
     #   ascii_mode: false   # 关闭默认英文
 
