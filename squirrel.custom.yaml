@@ -12,7 +12,7 @@ patch:
 
 
   # 选择皮肤，亮色与暗色主题
-  style/color_scheme: purity_of_form_custom
+  style/color_scheme: wsq_custom
   # style/color_scheme: macos_light
   # style/color_scheme_dark: macos_dark
 
@@ -21,45 +21,64 @@ patch:
 
   # 皮肤列表
   preset_color_schemes:
-    # 对 purity_of_form 略微调整颜色，让色彩更柔和点，补全其他选项和注释
-    purity_of_form_custom:
-      name: "純粹的形式／Purity of Form Custom"
-      font_face: ""                   # 字体及大小
+    # 自定义皮肤
+    wsq_custom:
+      name: "专属皮肤/wsq_custom"
+      font_face: "PingFangSC"                   # 字体及大小
       font_point: 18
-      label_font_face: "PingFangSC"    # 序号字体及大小
+      label_font_face: "PingFangSC"             # 序号字体及大小
       label_font_point: 12
-      comment_font_face: "PingFangSC"  # 注字体及大小
+      comment_font_face: "PingFangSC"           # 注字体及大小
       comment_font_point: 16
-      candidate_list_layout: liner  # 候选排布：层叠 stacked | 行 linear
-      text_orientation: horizontal    # 行文向： 横 horizontal | 纵 vertical
-      inline_preedit: true            # 拼音位于： 候选框 false | 行内 true
-      translucency: false             # 磨砂： false | true
-      mutual_exclusive: false         # 色不叠加： false | true
-      border_height: 0               # 外边框 高
-      border_width: 0                # 外边框 宽
-      corner_radius: 10              # 外边框 圆角半径
-      hilited_corner_radius: 0       # 选中框 圆角半径
-      surrounding_extra_expansion: 0 # 候选项背景相对大小？
-      shadow_size: 0                 # 阴影大小
-      line_spacing: 5                # 行间距
-      base_offset: 0                 # 字基高
-      alpha: 1                       # 透明度，0~1
-      spacing: 10                    # 拼音与候选项之间的距离 （inline_preedit: false）
-      color_space: srgb                       # 色彩空间： srgb | display_p3
-      back_color: 0x000000                    # 底色
-      label_color: 0x4997C6                   # 序号颜色
-      candidate_text_color: 0x4997C6          # 文字颜色
-      comment_text_color: 0x808080            # 注颜色
-      text_color: 0x808080                    # 拼音颜色 （inline_preedit: false）
-      hilited_candidate_back_color: 0x65B3EC  # 选中底色
-      hilited_candidate_label_color: 0x3A2A28 # 选中序号颜色
-      hilited_candidate_text_color: 0x3A2A28  # 选中文字颜色
-      hilited_comment_text_color: 0x808080    # 选中注颜色
-      hilited_text_color: 0xEEEEEE            # 选中拼音颜色 （inline_preedit: false）
-      # candidate_back_color:                 # 候选项底色
-      # preedit_back_color:                   # 拼音底色 （inline_preedit: false）
-      # hilited_back_color:                   # 选中拼音底色 （inline_preedit: false）
-      # border_color:                         # 外边框颜色
+      candidate_list_layout: liner              # 候选排布：层叠 stacked | 行 linear
+      text_orientation: horizontal              # 行文向： 横 horizontal | 纵 vertical
+      inline_preedit: true                      # 拼音位于： 候选框 false | 行内 true
+      translucency: false                       # 磨砂： false | true
+      mutual_exclusive: false                   # 色不叠加： false | true
+      border_height: 0                          # 外边框 高
+      border_width: 0                           # 外边框 宽
+      corner_radius: 10                         # 外边框 圆角半径
+      hilited_corner_radius: 0                  # 选中框 圆角半径
+      surrounding_extra_expansion: 0            # 候选项背景相对大小？
+      shadow_size: 0                            # 阴影大小
+      line_spacing: 5                           # 行间距
+      base_offset: 0                            # 字基高
+      alpha: 1                                  # 透明度，0~1
+      spacing: 10                               # 拼音与候选项之间的距离 （inline_preedit: false）
+      color_space: srgb                         # 色彩空间： srgb | display_p3
+
+      # 黑金配色
+      # back_color: 0x000000                      # 底色
+      # label_color: 0x4997C6                     # 序号颜色
+      # candidate_text_color: 0x4997C6            # 文字颜色
+      # hilited_candidate_back_color: 0x65B3EC    # 选中底色
+      # hilited_candidate_label_color: 0x3A2A28   # 选中序号颜色
+      # hilited_candidate_text_color: 0x3A2A28    # 选中文字颜色
+
+      # 黑绿配色-1
+      back_color: 0x463E39                      # 底色
+      label_color: 0xD5E7F2                     # 序号颜色
+      candidate_text_color: 0xD5E7F2            # 文字颜色
+      hilited_candidate_back_color: 0x86986D    # 选中底色
+      hilited_candidate_label_color: 0xF7F7F7   # 选中序号颜色
+      hilited_candidate_text_color: 0xF7F7F7    # 选中文字颜色
+      # 黑绿配色-2
+      # back_color: 0x212121                      # 底色
+      # label_color: 0xB3CAD9                     # 序号颜色
+      # candidate_text_color: 0xB3CAD9            # 文字颜色
+      # hilited_candidate_back_color: 0x86986D    # 选中底色
+      # hilited_candidate_label_color: 0xF6F6F6   # 选中序号颜色
+      # hilited_candidate_text_color: 0xF6F6F6    # 选中文字颜色
+
+
+      comment_text_color: 0x808080              # 注颜色
+      text_color: 0x808080                      # 拼音颜色 （inline_preedit: false）
+      hilited_comment_text_color: 0x808080      # 选中注颜色
+      hilited_text_color: 0xEEEEEE              # 选中拼音颜色 （inline_preedit: false）
+      # candidate_back_color:                     # 候选项底色
+      # preedit_back_color:                       # 拼音底色 （inline_preedit: false）
+      # hilited_back_color:                       # 选中拼音底色 （inline_preedit: false）
+      # border_color:                             # 外边框颜色
 
     macos_light:
       name: Mac仿原生亮色/macos_light
