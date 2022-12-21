@@ -19,6 +19,7 @@ patch:
     caption: 「方案选单」
     hotkeys:
       # - Control+grave
+      # - Alt+grave
       # - Control+Shift+grave
       - F4
       # - Alt+grave
@@ -85,6 +86,7 @@ patch:
     - { when: has_menu, accept: equal, send: Page_Down }
 
     # paging_with_comma_period: 翻页：, .
+    # 需要额外注释掉方案中 recognizer/patterns 下的 url_2 选项（这个会覆盖掉句号的行为）
     # - { when: paging, accept: comma, send: Page_Up }
     # - { when: has_menu, accept: period, send: Page_Down }
 
