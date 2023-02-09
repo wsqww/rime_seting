@@ -48,12 +48,12 @@ patch:
       color_space: srgb                         # 色彩空间： srgb | display_p3
 
       # 黑金配色
-      back_color: 0x000000                      # 底色
-      label_color: 0x4997C6                     # 序号颜色
-      candidate_text_color: 0x4997C6            # 文字颜色
-      hilited_candidate_back_color: 0x65B3EC    # 选中底色
-      hilited_candidate_label_color: 0x3A2A28   # 选中序号颜色
-      hilited_candidate_text_color: 0x3A2A28    # 选中文字颜色
+      # back_color: 0x000000                      # 底色
+      # label_color: 0x4997C6                     # 序号颜色
+      # candidate_text_color: 0x4997C6            # 文字颜色
+      # hilited_candidate_back_color: 0x65B3EC    # 选中底色
+      # hilited_candidate_label_color: 0x3A2A28   # 选中序号颜色
+      # hilited_candidate_text_color: 0x3A2A28    # 选中文字颜色
 
       # 黑绿配色-1
       # back_color: 0x463E39                      # 底色
@@ -63,12 +63,12 @@ patch:
       # hilited_candidate_label_color: 0xF7F7F7   # 选中序号颜色
       # hilited_candidate_text_color: 0xF7F7F7    # 选中文字颜色
       # 黑绿配色-2
-      # back_color: 0x212121                      # 底色
-      # label_color: 0xB3CAD9                     # 序号颜色
-      # candidate_text_color: 0xB3CAD9            # 文字颜色
-      # hilited_candidate_back_color: 0x86986D    # 选中底色
-      # hilited_candidate_label_color: 0xF6F6F6   # 选中序号颜色
-      # hilited_candidate_text_color: 0xF6F6F6    # 选中文字颜色
+      back_color: 0x212121                      # 底色
+      label_color: 0xB3CAD9                     # 序号颜色
+      candidate_text_color: 0xB3CAD9            # 文字颜色
+      hilited_candidate_back_color: 0x86986D    # 选中底色
+      hilited_candidate_label_color: 0xF6F6F6   # 选中序号颜色
+      hilited_candidate_text_color: 0xF6F6F6    # 选中文字颜色
 
       # 冷色 黑 蓝
       # back_color: 0x645B39                      # 底色
@@ -140,5 +140,71 @@ patch:
       border_width: 4                             # 窗口左右宽度
       border_color_width: 0                       # 输入条边框宽度
       # label_font_face: "SFCompactText-Regular"    # 候选词编号字体
+
+    # 对 purity_of_form 略微调整颜色，让色彩更柔和点，补全其他选项和注释
+    purity_of_form_custom:
+      name: "純粹的形式／Purity of Form Custom"
+      author: 雨過之後、佛振
+      font_face: ""                   # 字体及大小
+      font_point: 18
+      label_font_face: "Helvetica"    # 序号字体及大小
+      label_font_point: 12
+      comment_font_face: "Helvetica"  # 注字体及大小
+      comment_font_point: 16
+      candidate_list_layout: stacked  # 候选排布：层叠 stacked | 行 linear
+      text_orientation: horizontal    # 行文向： 横 horizontal | 纵 vertical
+      inline_preedit: true            # 拼音位于： 候选框 false | 行内 true
+      translucency: false             # 磨砂： false | true
+      mutual_exclusive: false         # 色不叠加： false | true
+      border_height: 0               # 外边框 高
+      border_width: 0                # 外边框 宽
+      corner_radius: 10              # 外边框 圆角半径
+      hilited_corner_radius: 0       # 选中框 圆角半径
+      surrounding_extra_expansion: 0 # 候选项背景相对大小？
+      shadow_size: 0                 # 阴影大小
+      line_spacing: 5                # 行间距
+      base_offset: 0                 # 字基高
+      alpha: 1                       # 透明度，0~1
+      spacing: 10                    # 拼音与候选项之间的距离 （inline_preedit: false）
+      color_space: srgb                       # 色彩空间： srgb | display_p3
+      back_color: 0x545554                    # 底色
+      hilited_candidate_back_color: 0xE3E3E3  # 选中底色
+      label_color: 0xBBBBBB                   # 序号颜色
+      hilited_candidate_label_color: 0x4C4C4C # 选中序号颜色
+      candidate_text_color: 0xEEEEEE          # 文字颜色
+      hilited_candidate_text_color: 0x000000  # 选中文字颜色
+      comment_text_color: 0x808080            # 注颜色
+      hilited_comment_text_color: 0x808080    # 选中注颜色
+      text_color: 0x808080                    # 拼音颜色 （inline_preedit: false）
+      hilited_text_color: 0xEEEEEE            # 选中拼音颜色 （inline_preedit: false）
+      # candidate_back_color:                 # 候选项底色
+      # preedit_back_color:                   # 拼音底色 （inline_preedit: false）
+      # hilited_back_color:                   # 选中拼音底色 （inline_preedit: false）
+      # border_color:                         # 外边框颜色
+
+    frosy_teal:
+      name: "霜青／Frosty Teal"  # 配色取自 Alfred 自带主题 Frosty Teal
+      author: Dvel
+      font_face: ""                   # 字体及大小
+      font_point: 18.0
+      label_font_face: "Helvetica"    # 序号字体及大小
+      label_font_point: 12.0
+      comment_font_face: "Helvetica"  # 注字体及大小
+      comment_font_point: 16.0
+      inline_preedit: true            # 拼音位于： 候选框 false | 行内 true
+      candidate_list_layout: stacked  # 候选排布：层叠 stacked | 行 linear
+      text_orientation: horizontal    # 行文向： 横 horizontal | 纵 vertical
+      translucency: true              # 磨砂： false | true
+      alpha: 0.95                     # 透明度，0~1
+      back_color: 0xB5806410                   # 底色
+      hilited_candidate_back_color: 0x1E000000 # 选中项底色
+      candidate_text_color: 0xADFFFFFF         # 文字颜色
+      hilited_candidate_text_color: 0xFFFFFF   # 选中文字颜色
+      comment_text_color: 0x6FFFFFFF           # 注颜色
+      hilited_comment_text_color: 0x6FFFFFFF   # 选中注颜色
+      label_color: 0xADFFFFFF                  # 序号颜色
+      hilited_candidate_label_color: 0xFFFFFF  # 选中序号颜色
+      text_color: 0x808080                     # 拼音颜色 （inline_preedit: false）
+      hilited_text_color: 0xEEEEEE             # 选中拼音颜色 （inline_preedit: false）
 
     # 内置的皮肤  /Library/Input Methods/Squirrel.app/Contents/SharedSupport/squirrel.yaml
